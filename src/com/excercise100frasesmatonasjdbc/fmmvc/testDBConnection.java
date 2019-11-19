@@ -19,7 +19,7 @@ public class testDBConnection {
 			assertTrue("No se cerro la conexion", connection.isClosed());
 			
 		} catch (Exception e) {
-			
+			e.printStackTrace();
 		}
 	}
 }
