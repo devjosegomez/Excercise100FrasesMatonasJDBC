@@ -28,7 +28,7 @@ public class PersonaServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		String txtNombre = req.getParameter("txtNombre");
 		String txtEdad = req.getParameter("txtEdad");
-		
+		String txtCarrera = req.getParameter("txtCarrera");
 	}
 
 }
