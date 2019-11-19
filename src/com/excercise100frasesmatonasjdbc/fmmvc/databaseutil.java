@@ -15,8 +15,6 @@ public class databaseutil {
 		String timeZone = "useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 		String url = String.format(URL_FORMAT, dbms, host, port, dataBase, timeZone);
 		
-		System.out.println(url);
-		
 		Connection connection = null;
 		
 		try {
@@ -27,5 +25,14 @@ public class databaseutil {
 		}
 		
 		return connection;
+	}
+	
+	public static void closeConnection(Connection conn) {
+		try {
+			conn.close();
+			}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
