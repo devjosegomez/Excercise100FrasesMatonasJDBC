@@ -1,18 +1,11 @@
 package com.excercise100frasesmatonasjdbc.model;
 
+import java.util.Date;
+
 public class Frase {
-	private int idFrase;
 	private String contenido;
 	private int cantidad;
-	private String fechaDesde;
-	
-	public int getIdFrase() {
-		return idFrase;
-	}
-	
-	public void setIdFrase(int idFrase) {
-		this.idFrase = idFrase;
-	}
+	private Date fechaDesde;
 	
 	public String getContenido() {
 		return this.contenido;
@@ -30,11 +23,15 @@ public class Frase {
 		this.cantidad = cantidad;
 	}
 	
-	public String getFechaDesde() {
+	public Date getFechaDesde() {
 		return this.fechaDesde;
 	}
 	
-	public void setfechaDesde(String fechaDesde) {
+	public void setfechaDesde(Date fechaDesde) {
 		this.fechaDesde = fechaDesde;
+	}
+	
+	public String toString() {
+		return String.format("'%s', %d, '%s'", contenido, cantidad, fechaDesde);
 	}
 }

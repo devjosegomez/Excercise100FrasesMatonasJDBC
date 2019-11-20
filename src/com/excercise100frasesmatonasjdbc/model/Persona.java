@@ -1,18 +1,12 @@
 package com.excercise100frasesmatonasjdbc.model;
 
+import java.util.Date;
+
 public class Persona {
-	private int idPersona;
 	private String nombre;
 	private int edad;
 	private String carrera;
-	
-	public int getIdPersona() {
-		return this.idPersona;
-	}
-	
-	public void setIdPersona(int idPersona) {
-		this.idPersona = idPersona;
-	}
+	private Date fecha;
 	
 	public String getNombre() {
 		return this.nombre;
@@ -36,5 +30,17 @@ public class Persona {
 	
 	public void setCarrera(String carrera) {
 		this.carrera = carrera;
+	}
+	
+	public Date getFecha() {
+		return this.fecha;
+	}
+	
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+	
+	public String toString() {
+		return String.format("'%s', %d , '%s'", nombre, edad, carrera);
 	}
 }
