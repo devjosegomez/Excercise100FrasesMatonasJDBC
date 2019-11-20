@@ -4,7 +4,7 @@ public class Frase {
 	private int idFrase;
 	private String contenido;
 	private int cantidad;
-	//private Date fechaDesde;
+	private String fechaDesde;
 	
 	public int getIdFrase() {
 		return idFrase;
@@ -28,5 +28,13 @@ public class Frase {
 	
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
+	}
+	
+	public String getFechaDesde() {
+		return this.fechaDesde;
+	}
+	
+	public void setfechaDesde(String fechaDesde) {
+		this.fechaDesde = fechaDesde;
 	}
 }
