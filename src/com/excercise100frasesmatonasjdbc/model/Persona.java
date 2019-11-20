@@ -3,10 +3,19 @@ package com.excercise100frasesmatonasjdbc.model;
 import java.util.Date;
 
 public class Persona {
+	private int idPersona;
 	private String nombre;
 	private int edad;
 	private String carrera;
 	private Date fecha;
+	
+	public int getIdPersona() {
+		return this.idPersona;
+	}
+	
+	public void setIdPersona(int idPersona) {
+		this.idPersona = idPersona;
+	}
 	
 	public String getNombre() {
 		return this.nombre;
