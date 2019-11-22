@@ -78,6 +78,7 @@ public class DataBaseManager {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+				
 		return listPersonas;
 	} 
 	
