@@ -17,12 +17,6 @@ public class DataBaseManager {
 	}
 	
 	public void crearPersona(Persona persona) {
-		/*
-		String query = "insert into persona(nombre, edad, carrera) " 
-				+ "values(" + persona.getNombre() +", "
-				+ persona.getEdad() + ", "
-				+ persona.getCarrera() + ");";
-		*/
 		String query = "insert into persona(nombre, edad, carrera) " 
 				+ "values(" +persona.toString() + ");";
 		
